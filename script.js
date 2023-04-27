@@ -13,3 +13,5 @@ function makeRow() {
 }
 
 makeRow();
+
+console.log(addRow);
