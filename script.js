@@ -4,7 +4,7 @@ const addRow = document.getElementById("add-row");
 const select = document.getElementById("colors");
 addRow.addEventListener("click", makeRow);
 table.addEventListener("click", colorize);
-colors.addEventListener("change", selectColor);
+select.addEventListener("change", selectColor);
 
 function makeRow() {
   const row = document.createElement("tr");
