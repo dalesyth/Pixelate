@@ -5,6 +5,7 @@ const select = document.getElementById("colors");
 addRow.addEventListener("click", makeRow);
 table.addEventListener("click", colorize);
 select.addEventListener("change", selectColor);
+let selectedColor = "red";
 
 function makeRow() {
   const row = document.createElement("tr");
@@ -22,11 +23,10 @@ function colorize(event) {
   if (target.className.length) {
     target.className = "";
   } else {
-    target.className = "red";
+    target.className = selectedColor;
   }
 }
 
 function selectColor(event) {
-  console.log(event.target.value);
-  // target.className = event.target.value;
+  selectedColor = event.target.value;
 }
