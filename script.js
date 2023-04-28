@@ -14,4 +14,17 @@ function makeRow() {
 
 makeRow();
 
-console.log(addRow);
+function colorize (event) {
+  const target = event.target
+  if (target.className.length) {
+    target.className = ''
+  } else {
+    target.className = 'red'
+  }
+}
+
+function selectColor (event) {
+  console.log(event.target.value);
+  target.className = event.target.value; 
+}
+
